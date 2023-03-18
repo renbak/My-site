@@ -2637,6 +2637,7 @@ footer .social-links li:first-child {
   }
   100% {
     opacity: 0;
+    animation-delay: 8s;
   }
 }
 
