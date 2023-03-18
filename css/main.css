@@ -2590,7 +2590,8 @@ footer .social-links li:first-child {
   top: 130%;
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -2607,7 +2608,7 @@ footer .social-links li:first-child {
 }
 
 /* Изменено */
-/* @keyframes imagesFading {
+@keyframes imagesFading {
   0% {
     opacity: 1;
   }
@@ -2620,26 +2621,9 @@ footer .social-links li:first-child {
   100% {
     opacity: 0;
   }
-} */
-
-@keyframes imagesFading {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    animation-delay: 8s;
-  }
 }
+
+
 
 /* Изо под ремонтом ПК */
 
