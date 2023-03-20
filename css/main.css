@@ -2623,8 +2623,6 @@ footer .social-links li:first-child {
   }
 }
 
-
-
 /* Изо под ремонтом ПК */
 
 .image_01 {
@@ -2775,4 +2773,22 @@ footer .social-links li:first-child {
 
 #hero + section {
   padding-top: 80px; /* замените значение на высоту вашей шапки */
+}
+
+.cont-li {
+  display: flex;
+  position: relative;
+  top: 10px;
+  margin: 0;
+}
+
+.cont_our {
+  margin: 0;
+  width: 50px;
+  font-size: 40px;
+}
+
+.mob_phone {
+  font-size: 20px;
+  font-weight: 700;
 }
