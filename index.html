@@ -330,7 +330,8 @@
 
    		<div class="twelve columns">
 
-	         <h1>Будьте з нами на зв'язку.</h1>
+	         <h2>Будьте з нами на зв'язку.</h2>
+			 <h3>Якщо у Вас є питання, заповніть форму нижче.</h3>
 
 	         <hr />	        
 
@@ -341,46 +342,22 @@
       <div class="row">
       	
       	<div id="contact-form" class="six columns tab-whole left">
+        
+			<form name="contactForm" id="contactForm" action="https://formspree.io/f/xlekwgbd" method="POST">
+  				<label class="group" style="color: white;">
+    				Ваш email:
+    					<input type="email" name="email">
+  				</label>
+  				<label style="color: white;">
+    				Ваше повідомлення:
+    					<textarea name="Ваше повідомлення"></textarea>
+  				</label>  						
+  				<button class="submitform" type="submit">Відправити</button>
+			</form>
 
-            <!-- form
-            <form name="contactForm" id="contactForm" method="post" action=""  >
-      			<fieldset>
+         </div>
 
-                  <div class="group">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Ім'я" value="" minLength="2" required />
-                  </div>
-                  <div>
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required />
-	               </div>
-                  <div>
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Тема питання"  value="" />
-	               </div>                       
-                  <div>
-	                 	<textarea name="contactMessage"  id="contactMessage" placeholder="Повідомлення" rows="10" cols="50" required ></textarea>
-	               </div>                      
-                  <div>
-                     <button class="submitform">Відправити</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Відправка...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
-							</div>
-                  </div>
 
-      			</fieldset>
-      		</form> 
-
-            
-            <div id="message-warning"></div>
-            
-      		<div id="message-success">
-               <i class="icon-ok"></i>Ваше повідомлення відправлено, дякуємо за зв'язок!<br />
-      		</div>
-
-         </div> -->
 
          <div class="six columns tab-whole right">
 
