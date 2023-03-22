@@ -256,3 +256,243 @@ function fadeImages() {
 }
 
 setInterval(fadeImages, 3000);
+
+initImgPc('#pc img', [
+  '../images/work_moments/bga_remove.jpg',
+  '../images/work_moments/dust_yes.jpg',
+  '../images/work_moments/pc_dust.png',
+  '../images/work_moments/termo-pasta_video.jpg',
+]);
+
+function initImgPc(selector, srcArr) {
+  const img = document.querySelector(selector);
+  Object.assign(img, {
+    buf: Object.assign(new Image(), { img }),
+    srcArr: [...srcArr],
+    changeInterval: 5e3,
+    bufIdx: 0,
+    change: function () {
+      this.style.animationName = 'img-in';
+      this.src = this.buf.src || this.nextImage();
+      this.buf.src = this.nextImage();
+    },
+    nextImage: function () {
+      this.bufIdx = ++this.bufIdx < this.srcArr.length ? this.bufIdx : 0;
+      return this.srcArr[this.bufIdx];
+    },
+  });
+  img.buf.addEventListener('load', loadHandler);
+  img.addEventListener('animationend', animEndHandler);
+  img.change();
+  return img;
+
+  function loadHandler() {
+    setTimeout(
+      () => (this.img.style.animationName = 'img-out'),
+      this.img.changeInterval
+    );
+  }
+  function animEndHandler({ animationName }) {
+    if (animationName === 'img-out') this.change();
+  }
+}
+
+initImgConsole('#console img', [
+  '../images/game/image_05.webp',
+  '../images/game/image_06.jpg',
+  '../images/game/image_07.jpg',
+  '../images/game/image_08.jpg',
+  '../images/game/image_09.jpg',
+]);
+
+function initImgConsole(selector, srcArr) {
+  const img = document.querySelector(selector);
+  Object.assign(img, {
+    buf: Object.assign(new Image(), { img }),
+    srcArr: [...srcArr],
+    changeInterval: 5e3,
+    bufIdx: 0,
+    change: function () {
+      this.style.animationName = 'img-in';
+      this.src = this.buf.src || this.nextImage();
+      this.buf.src = this.nextImage();
+    },
+    nextImage: function () {
+      this.bufIdx = ++this.bufIdx < this.srcArr.length ? this.bufIdx : 0;
+      return this.srcArr[this.bufIdx];
+    },
+  });
+  img.buf.addEventListener('load', loadHandler);
+  img.addEventListener('animationend', animEndHandler);
+  img.change();
+  return img;
+
+  function loadHandler() {
+    setTimeout(
+      () => (this.img.style.animationName = 'img-out'),
+      this.img.changeInterval
+    );
+  }
+  function animEndHandler({ animationName }) {
+    if (animationName === 'img-out') this.change();
+  }
+}
+
+initImgTele('#tele img', [
+  '../images/appar/image_11.jpg',
+  '../images/appar/image_12.jpg',
+  '../images/appar/image_13.jpg',
+  '../images/appar/image_14.jpg',
+  '../images/appar/image_15.jpg',
+  '../images/appar/image_16.jpg',
+]);
+
+function initImgTele(selector, srcArr) {
+  const img = document.querySelector(selector);
+  Object.assign(img, {
+    buf: Object.assign(new Image(), { img }),
+    srcArr: [...srcArr],
+    changeInterval: 5e3,
+    bufIdx: 0,
+    change: function () {
+      this.style.animationName = 'img-in';
+      this.src = this.buf.src || this.nextImage();
+      this.buf.src = this.nextImage();
+    },
+    nextImage: function () {
+      this.bufIdx = ++this.bufIdx < this.srcArr.length ? this.bufIdx : 0;
+      return this.srcArr[this.bufIdx];
+    },
+  });
+  img.buf.addEventListener('load', loadHandler);
+  img.addEventListener('animationend', animEndHandler);
+  img.change();
+  return img;
+
+  function loadHandler() {
+    setTimeout(
+      () => (this.img.style.animationName = 'img-out'),
+      this.img.changeInterval
+    );
+  }
+  function animEndHandler({ animationName }) {
+    if (animationName === 'img-out') this.change();
+  }
+}
+
+initImgMobile('#mobile img', [
+  '../images/mob/image_17.jpg',
+  '../images/mob/image_18.jpg',
+  '../images/mob/image_19.jpg',
+  '../images/mob/image_20.jpg',
+]);
+
+function initImgMobile(selector, srcArr) {
+  const img = document.querySelector(selector);
+  Object.assign(img, {
+    buf: Object.assign(new Image(), { img }),
+    srcArr: [...srcArr],
+    changeInterval: 5e3,
+    bufIdx: 0,
+    change: function () {
+      this.style.animationName = 'img-in';
+      this.src = this.buf.src || this.nextImage();
+      this.buf.src = this.nextImage();
+    },
+    nextImage: function () {
+      this.bufIdx = ++this.bufIdx < this.srcArr.length ? this.bufIdx : 0;
+      return this.srcArr[this.bufIdx];
+    },
+  });
+  img.buf.addEventListener('load', loadHandler);
+  img.addEventListener('animationend', animEndHandler);
+  img.change();
+  return img;
+
+  function loadHandler() {
+    setTimeout(
+      () => (this.img.style.animationName = 'img-out'),
+      this.img.changeInterval
+    );
+  }
+  function animEndHandler({ animationName }) {
+    if (animationName === 'img-out') this.change();
+  }
+}
+
+initImgBigBro('#big_bro img', [
+  '../images/video/image_21.jpg',
+  '../images/video/image_22.jpg',
+  '../images/video/image_23.jpg',
+]);
+
+function initImgBigBro(selector, srcArr) {
+  const img = document.querySelector(selector);
+  Object.assign(img, {
+    buf: Object.assign(new Image(), { img }),
+    srcArr: [...srcArr],
+    changeInterval: 5e3,
+    bufIdx: 0,
+    change: function () {
+      this.style.animationName = 'img-in';
+      this.src = this.buf.src || this.nextImage();
+      this.buf.src = this.nextImage();
+    },
+    nextImage: function () {
+      this.bufIdx = ++this.bufIdx < this.srcArr.length ? this.bufIdx : 0;
+      return this.srcArr[this.bufIdx];
+    },
+  });
+  img.buf.addEventListener('load', loadHandler);
+  img.addEventListener('animationend', animEndHandler);
+  img.change();
+  return img;
+
+  function loadHandler() {
+    setTimeout(
+      () => (this.img.style.animationName = 'img-out'),
+      this.img.changeInterval
+    );
+  }
+  function animEndHandler({ animationName }) {
+    if (animationName === 'img-out') this.change();
+  }
+}
+
+initImgDomofon('#domofon img', [
+  '../images/domofon/image_24.webp',
+  '../images/domofon/image_25.webp',
+]);
+
+function initImgDomofon(selector, srcArr) {
+  const img = document.querySelector(selector);
+  Object.assign(img, {
+    buf: Object.assign(new Image(), { img }),
+    srcArr: [...srcArr],
+    changeInterval: 5e3,
+    bufIdx: 0,
+    change: function () {
+      this.style.animationName = 'img-in';
+      this.src = this.buf.src || this.nextImage();
+      this.buf.src = this.nextImage();
+    },
+    nextImage: function () {
+      this.bufIdx = ++this.bufIdx < this.srcArr.length ? this.bufIdx : 0;
+      return this.srcArr[this.bufIdx];
+    },
+  });
+  img.buf.addEventListener('load', loadHandler);
+  img.addEventListener('animationend', animEndHandler);
+  img.change();
+  return img;
+
+  function loadHandler() {
+    setTimeout(
+      () => (this.img.style.animationName = 'img-out'),
+      this.img.changeInterval
+    );
+  }
+  function animEndHandler({ animationName }) {
+    if (animationName === 'img-out') this.change();
+  }
+}

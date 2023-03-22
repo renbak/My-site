@@ -127,7 +127,7 @@ h6 {
 }
 
 p {
-  margin: 15px 0 15px 0;
+  margin: 5px 0 20px 0;
 }
 
 p img {
@@ -311,7 +311,7 @@ img.pull-left {
 --------------------------------------------------------------------- */
 .bgrid {
   padding: 0 20px;
-  margin-bottom: 190px;
+  margin-bottom: 35px;
   text-align: center;
 }
 
@@ -1662,8 +1662,9 @@ ul#nav li.current a:after {
   color: #fdc501;
   padding: 0;
   text-transform: none;
-  text-align: left;
-  margin-bottom: 6px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2px;
 }
 
 /* media queries:  
@@ -2558,208 +2559,6 @@ footer .social-links li:first-child {
 
 /* ++++++++++++++++++++++++++ */
 
-/* .image {
-  display: flex;
-  position: absolute;
-  width: 90%;
-  height: 70%;
-  left: 50%;
-  top: 130%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  -webkit-animation: imagesFading 8s infinite;
-  -moz-animation: imagesFading 8s infinite;
-  -o-animation: imagesFading 8s infinite;
-  animation: imagesFading 8s infinite;
-  /* new */
-/* transition: opacity 1s ease-in-out;
-}  */
-
-.image {
-  display: flex;
-  position: absolute;
-  width: 90%;
-  height: 70%;
-  left: 50%;
-  top: 130%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  -webkit-animation: imagesFading 8s infinite;
-  -moz-animation: imagesFading 8s infinite;
-  -o-animation: imagesFading 8s infinite;
-  animation: imagesFading 8s infinite;
-  /* Добавлено новое свойство */
-  transition: opacity 1s ease-in-out;
-  /* Добавлено новое свойство */
-  opacity: 1;
-}
-
-/* Изменено */
-@keyframes imagesFading {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/* Изо под ремонтом ПК */
-
-.image_01 {
-  background-image: url(../images/work_moments/bga_remove.jpg);
-  animation-delay: 12s;
-}
-
-.image_02 {
-  background-image: url(../images/work_moments/dust_yes.jpg);
-  animation-delay: 9s;
-}
-
-.image_03 {
-  background-image: url(../images/work_moments/pc_dust.png);
-  animation-delay: 6s;
-}
-
-.image_04 {
-  background-image: url(../images/work_moments/termo-pasta_video.jpg);
-  animation-delay: 3s;
-}
-
-/* изо под приставками */
-
-.image_05 {
-  background-image: url(../images/game/image_05.webp);
-  animation-delay: 18s;
-}
-
-.image_06 {
-  background-image: url(../images/game/image_06.jpg);
-  animation-delay: 15s;
-}
-
-.image_07 {
-  background-image: url(../images/game/image_07.jpg);
-  animation-delay: 12s;
-}
-
-.image_08 {
-  background-image: url(../images/game/image_08.jpg);
-  animation-delay: 9s;
-}
-
-.image_09 {
-  background-image: url(../images/game/image_09.jpg);
-  animation-delay: 6s;
-}
-
-.image_10 {
-  background-image: url(../images/game/image_10.jpg);
-  animation-delay: 3s;
-}
-
-/* изо под быт техникой */
-
-.image_11 {
-  background-image: url(../images/appar/image_11.jpg);
-  animation-delay: 30s;
-}
-
-.image_12 {
-  background-image: url(../images/appar/image_12.jpg);
-  animation-delay: 25s;
-}
-
-.image_13 {
-  background-image: url(../images/appar/image_13.jpg);
-  animation-delay: 20s;
-}
-
-.image_14 {
-  background-image: url(../images/appar/image_14.jpg);
-  animation-delay: 15s;
-}
-
-.image_15 {
-  background-image: url(../images/appar/image_15.jpg);
-  animation-delay: 10s;
-}
-
-.image_16 {
-  background-image: url(../images/appar/image_16.jpg);
-  animation-delay: 5s;
-}
-
-/* изо под мобилками */
-
-.image_17 {
-  background-image: url(../images/mob/image_17.jpg);
-  animation-delay: 15s;
-}
-
-.image_18 {
-  background-image: url(../images/mob/image_18.jpg);
-  animation-delay: 10s;
-}
-
-.image_19 {
-  background-image: url(../images/mob/image_19.jpg);
-  animation-delay: 5s;
-}
-
-.image_20 {
-  background-image: url(../images/mob/image_20.jpg);
-  animation-delay: 0s;
-}
-
-/* изо под наблюдение */
-
-.image_21 {
-  background-image: url(../images/video/image_21.jpg);
-  animation-delay: 6s;
-}
-
-.image_22 {
-  background-image: url(../images/video/image_22.jpg);
-  animation-delay: 3s;
-}
-
-.image_23 {
-  background-image: url(../images/video/image_23.jpg);
-  animation-delay: 0s;
-}
-
-/* изо под домофон */
-
-.image_24 {
-  background-image: url(../images/domofon/image_24.webp);
-  animation-delay: 3s;
-}
-
-.image_25 {
-  background-image: url(../images/domofon/image_25.webp);
-  animation-delay: 0s;
-}
-
 /* LOGO socIAL */
 
 .telega {
@@ -2791,4 +2590,81 @@ footer .social-links li:first-child {
 .mob_phone {
   font-size: 20px;
   font-weight: 700;
+}
+
+#pc {
+  height: 270px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#console {
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#tele {
+  height: 270px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#mobile {
+  height: 330px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#big_bro {
+  height: 330px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#domofon {
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#pc img,
+#console img,
+#tele img,
+#mobile img,
+#big_bro img,
+#domofon img {
+  max-width: 100%;
+  animation: none 2s linear forwards;
+}
+
+@keyframes img-in {
+  0% {
+    filter: grayscale(100%);
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  50% {
+    filter: grayscale(100%);
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+@keyframes img-out {
+  0% {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+  30% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(100%);
+    opacity: 0;
+    transform: scale(1.05);
+  }
 }
