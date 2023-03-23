@@ -256,7 +256,7 @@ ol {
 }
 
 ul {
-  list-style: disc;
+  /* list-style: disc; */
   margin-left: 17px;
 }
 
@@ -981,8 +981,10 @@ ul#nav li.current a:after {
   letter-spacing: -1px;
   padding-bottom: 24px;
   color: white;
-  /* text-shadow: 0 1px 20px rgba(0, 0, 0, 0.6); */
+  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.6);
   position: relative;
+  border: 0px solid rgba(251, 2, 62, 0.5);
+  filter: blur(0.7px);
 
   /* for css animations */
   filter: alpha(opacity=0);
@@ -1008,6 +1010,8 @@ ul#nav li.current a:after {
   text-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
   width: 85%;
   margin-top: 24px;
+  border: 0px solid rgba(251, 2, 62, 0.5);
+  filter: blur(0.5px);
 
   /* for css animations */
   filter: alpha(opacity=0);
@@ -1028,6 +1032,8 @@ ul#nav li.current a:after {
   -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
   opacity: 1;
   zoom: 1;
+  border: 2px solid rgba(251, 2, 62, 0.5);
+  filter: blur(1px);
 }
 
 .oldie #hero-slider .slides .flex-caption h3 {
@@ -1035,6 +1041,8 @@ ul#nav li.current a:after {
   -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
   opacity: 1;
   zoom: 1;
+  border: 2px solid rgba(251, 2, 62, 0.5);
+  filter: blur(1px);
 }
 
 /* media queries:  
